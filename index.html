@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Word Scramble Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="game-container">
+    <p class="welcome-msg">Welcome, Ayesha Fatima!</p>
+    <div id="game-header">
+      <h1>Word Scramble Game</h1>
+      <div class="level">
+        <label for="level">Difficulty:</label>
+        <select id="level">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="timer-container">
+      <div class="progress-bar">
+        <div id="progress-bar-fill"></div>
+      </div>
+      <div class="timer">Time: <span id="timer">30</span> seconds</div>
+    </div>
+
+    <div class="score">Score: <span id="score">0</span></div>
+    <div class="scrambled-word">
+      <p id="scrambled-word"></p>
+    </div>
+
+    <input type="text" id="guess" placeholder="Type your guess...">
+    <div class="btn-group">
+      <button id="submit-guess">Submit</button>
+      <button id="hint-btn">Hint</button>
+    </div>
+
+    <div id="message"></div>
+    <div class="high-score">High Score: <span id="high-score">0</span></div>
+    <div id="popup" class="popup">🎉 Correct! The word was: <span id="correct-word"></span></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+body {
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  position: relative;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid #f5f5f5;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  max-width: 500px;
+  width: 90%;
+}
+
+.welcome-msg {
+  font-size: 18px;
+  color: #ffeaa7;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #ffeb3b;
+}
+
+.level select {
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+}
+
+.timer-container {
+  margin: 15px 0;
+}
+
+.timer {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.score, .high-score {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.scrambled-word p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f1c40f;
+  margin: 15px 0;
+}
+
+#guess {
+  padding: 10px;
+  font-size: 16px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.btn-group {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #3498db;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#hint-btn {
+  background-color: #f39c12;
+}
+
+#hint-btn:hover {
+  background-color: #e67e22;
+}
+
+#message {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #ff9800;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #555;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#progress-bar-fill {
+  height: 100%;
+  width: 100%;
+  background-color: #4caf50;
+  transition: width 1s linear;
+}
+
+.popup {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 999;
+}
+
+.popup.show {
+  opacity: 1;
+}
